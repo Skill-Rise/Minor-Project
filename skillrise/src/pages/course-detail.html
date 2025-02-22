@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Title - SkillRise</title>
+  <link rel="stylesheet" href="../css/tailwind.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Feather Icons (alternative to Lucide) -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="min-h-screen bg-zinc-950 text-white">
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-zinc-900/80 backdrop-blur-lg border-b border-zinc-800">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center space-x-12">
+          <a href="index.html" class="text-xl font-bold">
+            Skill<span class="text-teal-400">Rise</span>
+          </a>
+          <div class="hidden md:flex space-x-6">
+            <a href="courses.html" class="nav-link-active">Courses</a>
+            <a href="mentors.html" class="nav-link">Mentors</a>
+            <a href="community.html" class="nav-link">Community</a>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="login.html" class="px-4 py-2 text-zinc-400 hover:text-white transition-colors">Log in</a>
+          <a href="register.html" class="btn-primary">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="pt-24 pb-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Course Content (2/3 width) -->
+        <div class="md:col-span-2">
+          <!-- Course Header -->
+          <div class="mb-8">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="text-sm text-zinc-400">
+                <a href="courses.html" class="hover:text-teal-400">Courses</a> 
+                <i data-feather="chevron-right" class="inline w-4 h-4"></i> 
+                <span id="course-category">Development</span>
+              </span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4" id="course-title">Complete Web Development Bootcamp</h1>
+            <p class="text-zinc-400 mb-4" id="course-description">Master HTML, CSS, JavaScript, React, Node.js and more with this comprehensive web development course.</p>
+            
+            <div class="flex flex-wrap items-center gap-4 text-sm mb-6">
+              <div class="flex items-center">
+                <i data-feather="star" class="w-4 h-4 text-yellow-500 mr-1"></i>
+                <span id="course-rating">4.8</span>
+                <span class="text-zinc-400 ml-1">(<span id="reviews-count">1,254</span> reviews)</span>
+              </div>
+              <div class="flex items-center">
+                <i data-feather="users" class="w-4 h-4 text-zinc-400 mr-1"></i>
+                <span id="students-count">15,432</span>
+                <span class="text-zinc-400 ml-1">students</span>
+              </div>
+              <div class="flex items-center">
+                <i data-feather="clock" class="w-4 h-4 text-zinc-400 mr-1"></i>
+                <span id="course-duration">12 weeks</span>
+              </div>
+              <div class="flex items-center">
+                <i data-feather="calendar" class="w-4 h-4 text-zinc-400 mr-1"></i>
+                <span id="last-updated">Last updated February 2025</span>
+              </div>
+            </div>
+            
+            <div class="flex items-center mb-4">
+              <img src="/api/placeholder/40/40" alt="Instructor" class="w-10 h-10 rounded-full mr-3">
+              <div>
+                <p class="font-medium" id="instructor-name">Sarah Johnson</p>
+                <p class="text-sm text-zinc-400" id="instructor-title">Senior Web Developer</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Course Image -->
+          <div class="mb-8 rounded-xl overflow-hidden">
+            <img src="/api/placeholder/800/450" alt="Course Image" class="w-full h-auto">
+          </div>
+          
+          <!-- Course Tabs -->
+          <div class="mb-8">
+            <div class="flex border-b border-zinc-800">
+              <button class="px-4 py-2 font-medium border-b-2 border-teal-400 text-teal-400">Overview</button>
+              <button class="px-4 py-2 font-medium text-zinc-400 hover:text-white">Curriculum</button>
+              <button class="px-4 py-2 font-medium text-zinc-400 hover:text-white">Instructor</button>
+              <button class="px-4 py-2 font-medium text-zinc-400 hover:text-white">Reviews</button>
+            </div>
+          </div>
+          
+          <!-- Course Details -->
+          <div class="space-y-8">
+            <!-- What You'll Learn -->
+            <div>
+              <h2 class="text-2xl font-bold mb-4">What You'll Learn</h2>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div class="flex items-start">
+                  <i data-feather="check-circle" class="w-5 h-5 text-teal-400 mt-0.5 mr-2 flex-shrink-0"></i>
+                  <p>Build responsive websites with HTML, CSS, and JavaScript</p>
+                </div>
+                <div class="flex items-start">
+                  <i data-feather="check-circle" class="w-5 h-5 text-teal-400 mt-0.5 mr-2 flex-shrink-0"></i>
+                  <p>Create dynamic web applications with React</p>
+                </div>
+                <div class="flex items-start">
+                  <i data-feather="check-circle" class="w-5 h-5 text-teal-400 mt-0.5 mr-2 flex-shrink-0"></i>
+                  <p>Develop server-side applications with Node.js</p>
+                </div>
+                <div class="flex items-start">
+                  <i data-feather="check-circle" class="w-5 h-5 text-teal-400 mt-0.5 mr-2 flex-shrink-0"></i>
+                  <p>Work with databases using MongoDB</p>
+                </div>
+                <div class="flex items-start">
+                  <i data-feather="check-circle" class="w-5 h-5 text-teal-400 mt-0.5 mr-2 flex-shrink-0"></i>
+                  <p>Deploy applications to production environments</p>
+                </div>
+                <div class="flex items-start">
+                  <i data-feather="check-circle" class="w-5 h-5 text-teal-400 mt-0.5 mr-2 flex-shrink-0"></i>
+                  <p>Implement user authentication and authorization</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Course Description -->
+            <div>
+              <h2 class="text-2xl font-bold mb-4">Course Description</h2>
+              <div class="space-y-4 text-zinc-300">
+                <p>This comprehensive bootcamp will take you from absolute beginner to professional web developer. You'll learn modern web development technologies and best practices through hands-on projects and real-world examples.</p>
+                <p>Whether you're looking to start a career in web development, freelance, or build your own projects, this course will give you all the tools and knowledge you need to succeed.</p>
+                <p>The course is project-based, meaning you'll be building real applications throughout the course. This approach ensures that you not only understand the concepts but also know how to apply them in real-world scenarios.</p>
+              </div>
+            </div>
+            
+            <!-- Requirements -->
+            <div>
+              <h2 class="text-2xl font-bold mb-4">Requirements</h2>
+              <ul class="space-y-2 text-zinc-300">
+                <li class="flex items-start">
+                  <i data-feather="disc" class="w-4 h-4 text-teal-400 mt-1 mr-2 flex-shrink-0"></i>
+                  <p>No programming experience needed - we'll start from the basics</p>
+                </li>
+                <li class="flex items-start">
+                  <i data-feather="disc" class="w-4 h-4 text-teal-400 mt-1 mr-2 flex-shrink-0"></i>
+                  <p>A computer with internet access (Windows, Mac, or Linux)</p>
+                </li>
+                <li class="flex items-start">
+                  <i data-feather="disc" class="w-4 h-4 text-teal-400 mt-1 mr-2 flex-shrink-0"></i>
+                  <p>Willingness to learn and dedication to complete the course</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Course Sidebar (1/3 width) -->
+        <div>
+          <div class="bg-zinc-900 rounded-xl border border-zinc-800 p-6 sticky top-24">
+            <div class="mb-6">
+              <div class="text-3xl font-bold mb-2" id="course-price">$99.99</div>
+              <button class="w-full btn-primary mb-3">Enroll Now</button>
+              <p class="text-center text-sm text-zinc-400 mb-3">30-Day Money-Back Guarantee</p>
+            </div>
+            
+            <div class="border-t border-zinc-800 pt-6">
+              <h3 class="font-semibold mb-4">This Course Includes:</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <i data-feather="play-circle" class="w-5 h-5 text-teal-400 mt-0.5 mr-2 flex-shrink-0"></i>
+                  <div>
+                    <p>48 hours on-demand video</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i data-feather="file-text" class="w-5 h-5 text-teal-400 mt-0.5 mr-2 flex-shrink-0"></i>
+                  <div>
+                    <p>75 articles & resources</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i data-feather="code" class="w-5 h-5 text-teal-400 mt-0.5 mr-2 flex-shrink-0"></i>
+                  <div>
+                    <p>12 coding exercises</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i data-feather="download" class="w-5 h-5 text-teal-400 mt-0.5 mr-2 flex-shrink-0"></i>
+                  <div>
+                    <p>Downloadable source code</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i data-feather="message-circle" class="w-5 h-5 text-teal-400 mt-0.5 mr-2 flex-shrink-0"></i>
+                  <div>
+                    <p>Forum support</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i data-feather="award" class="w-5 h-5 text-teal-400 mt-0.5 mr-2 flex-shrink-0"></i>
+                  <div>
+                    <p>Certificate of completion</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i data-feather="globe" class="w-5 h-5 text-teal-400 mt-0.5 mr-2 flex-shrink-0"></i>
+                  <div>
+                    <p>Lifetime access</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="border-t border-zinc-800 pt-6 mt-6">
+              <button class="w-full flex items-center justify-center px-4 py-2 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors mb-3">
+                <i data-feather="share-2" class="w-4 h-4 mr-2"></i>
+                Share Course
+              </button>
+              <button class="w-full flex items-center justify-center px-4 py-2 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors">
+                <i data-feather="heart" class="w-4 h-4 mr-2"></i>
+                Add to Wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-zinc-900 border-t border-zinc-800 py-12">
+    <div class="container mx-auto max-w-6xl px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <span class="text-xl font-bold mb-4 block">
+            Skill<span class="text-teal-400">Rise</span>
+          </span>
+          <p class="text-zinc-400">Empowering learners worldwide with quality education.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="text-zinc-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Careers</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Press</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Resources</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Help Center</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Terms</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Privacy</a></li>
+            <li><a href="community.html" class="text-zinc-400 hover:text-white transition-colors">Community</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Get in Touch</h4>
+          <ul class="space-y-2">
+            <li><a href="contact.html" class="text-zinc-400 hover:text-white transition-colors">Contact Us</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Support</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Feedback</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Partner with Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-zinc-800 text-center text-zinc-400">
+        © 2025 SkillRise. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/pages/course-detail.js"></script>
+  <script>
+    // Initialize feather icons
+    feather.replace();
+  </script>
+</body>
+</html>

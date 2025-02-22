@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - SkillRise</title>
+  <link rel="stylesheet" href="../css/tailwind.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Feather Icons (alternative to Lucide) -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="min-h-screen bg-zinc-950 text-white">
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-zinc-900/80 backdrop-blur-lg border-b border-zinc-800">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center space-x-12">
+          <a href="index.html" class="text-xl font-bold">
+            Skill<span class="text-teal-400">Rise</span>
+          </a>
+          <div class="hidden md:flex space-x-6">
+            <a href="courses.html" class="nav-link-active">Courses</a>
+            <a href="mentors.html" class="nav-link">Mentors</a>
+            <a href="community.html" class="nav-link">Community</a>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="login.html" class="px-4 py-2 text-zinc-400 hover:text-white transition-colors">Log in</a>
+          <a href="register.html" class="btn-primary">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="pt-24 pb-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+      <!-- Header -->
+      <div class="mb-12">
+        <h1 class="text-4xl font-bold mb-4">Explore Our Courses</h1>
+        <p class="text-zinc-400">Discover the perfect course to advance your skills and career</p>
+      </div>
+
+      <!-- Search and Filters -->
+      <div class="mb-12">
+        <div class="flex flex-col md:flex-row gap-4 mb-6">
+          <div class="relative flex-1">
+            <i data-feather="search" class="absolute left-3 top-3 text-zinc-400 w-5 h-5"></i>
+            <input 
+              type="text"
+              id="search-input"
+              placeholder="Search for courses..."
+              class="w-full pl-10 pr-4 py-3 bg-zinc-900 border border-zinc-800 rounded-lg focus:outline-none focus:border-teal-500"
+            />
+          </div>
+          <div class="flex gap-4">
+            <div class="relative" id="category-dropdown">
+              <button 
+                class="px-4 py-3 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center gap-2 category-btn"
+              >
+                <i data-feather="filter" class="w-5 h-5"></i>
+                <span class="selected-category">All</span>
+                <i data-feather="chevron-down" class="w-4 h-4"></i>
+              </button>
+              <div class="dropdown-menu hidden absolute mt-2 w-48 bg-zinc-900 border border-zinc-800 rounded-lg shadow-xl z-10">
+                <!-- Categories will be populated by JavaScript -->
+              </div>
+            </div>
+            <div class="relative" id="level-dropdown">
+              <button 
+                class="px-4 py-3 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center gap-2 level-btn"
+              >
+                <i data-feather="bar-chart-2" class="w-5 h-5"></i>
+                <span class="selected-level">All Levels</span>
+                <i data-feather="chevron-down" class="w-4 h-4"></i>
+              </button>
+              <div class="dropdown-menu hidden absolute mt-2 w-48 bg-zinc-900 border border-zinc-800 rounded-lg shadow-xl z-10">
+                <!-- Levels will be populated by JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="courses-grid">
+        <!-- Courses will be populated by JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-zinc-900 border-t border-zinc-800 py-12">
+    <div class="container mx-auto max-w-6xl px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <span class="text-xl font-bold mb-4 block">
+            Skill<span class="text-teal-400">Rise</span>
+          </span>
+          <p class="text-zinc-400">Empowering learners worldwide with quality education.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="text-zinc-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Careers</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Press</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Resources</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Help Center</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Terms</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Privacy</a></li>
+            <li><a href="community.html" class="text-zinc-400 hover:text-white transition-colors">Community</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Get in Touch</h4>
+          <ul class="space-y-2">
+            <li><a href="contact.html" class="text-zinc-400 hover:text-white transition-colors">Contact Us</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Support</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Feedback</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Partner with Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-zinc-800 text-center text-zinc-400">
+        © 2025 SkillRise. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/components/courseCard.js"></script>
+  <script src="../js/components/dropdown.js"></script>
+  <script src="../js/pages/courses.js"></script>
+  <script>
+    // Initialize feather icons
+    feather.replace();
+  </script>
+</body>
+</html>

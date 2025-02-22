@@ -1,0 +1,66 @@
+/* Additional custom styles beyond Tailwind */
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #27272a; /* zinc-800 */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #38b2ac; /* teal-500 */
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4fd1c5; /* teal-400 */
+  }
+  
+  /* Course card hover effect */
+  .course-card:hover .course-overlay {
+    opacity: 1;
+  }
+  
+  .course-card:hover .preview-button {
+    transform: translateY(0);
+  }
+  
+  /* Progress bar animation */
+  .progress-bar-animate {
+    transition: width 1s ease-in-out;
+  }
+  
+  /* Custom video player styling */
+  .video-player {
+    --video-progress: #38b2ac;
+    --video-thumb: #4fd1c5;
+  }
+  
+  .video-player::-webkit-media-controls-timeline {
+    background-color: var(--video-progress);
+  }
+  
+  /* For accessibility */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }

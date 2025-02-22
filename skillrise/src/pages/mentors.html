@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instructors - SkillRise</title>
+  <link rel="stylesheet" href="../css/tailwind.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Feather Icons (alternative to Lucide) -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="min-h-screen bg-zinc-950 text-white">
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-zinc-900/80 backdrop-blur-lg border-b border-zinc-800">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center space-x-12">
+          <a href="index.html" class="text-xl font-bold">
+            Skill<span class="text-teal-400">Rise</span>
+          </a>
+          <div class="hidden md:flex space-x-6">
+            <a href="courses.html" class="nav-link">Courses</a>
+            <a href="mentors.html" class="nav-link-active">Instructors</a>
+            <a href="community.html" class="nav-link">Community</a>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="login.html" class="px-4 py-2 text-zinc-400 hover:text-white transition-colors">Log in</a>
+          <a href="register.html" class="btn-primary">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 px-4 bg-gradient-to-b from-zinc-900 to-zinc-950">
+    <div class="container mx-auto max-w-6xl text-center">
+      <h1 class="text-5xl font-bold mb-6">Meet Our Expert Instructors</h1>
+      <p class="text-zinc-400 text-lg mb-8 max-w-3xl mx-auto">
+        Learn from industry professionals with years of real-world experience who are passionate about sharing their knowledge and helping you succeed.
+      </p>
+      <div class="relative">
+        <input 
+          type="text" 
+          id="instructor-search"
+          placeholder="Search instructors by name or expertise..."
+          class="w-full max-w-xl mx-auto px-4 py-3 bg-zinc-900 border border-zinc-800 rounded-lg focus:outline-none focus:border-teal-500"
+        >
+        <i data-feather="search" class="absolute right-4 top-3 text-zinc-400 w-5 h-5 mx-auto"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructors Section -->
+  <section id="instructors" class="py-20">
+    <div class="container mx-auto max-w-6xl px-4">
+      <!-- Filters -->
+      <div class="flex flex-wrap gap-4 mb-12">
+        <button class="px-4 py-2 bg-teal-500 rounded-lg text-white">All Categories</button>
+        <button class="px-4 py-2 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors">Web Development</button>
+        <button class="px-4 py-2 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors">UI/UX Design</button>
+        <button class="px-4 py-2 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors">Data Science</button>
+        <button class="px-4 py-2 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors">Digital Marketing</button>
+        <button class="px-4 py-2 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors">Business</button>
+      </div>
+      
+      <!-- Instructors Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Instructor 1 -->
+        <div class="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-zinc-700 transition-colors">
+          <div class="aspect-video relative">
+            <img src="/api/placeholder/400/250" alt="Sarah Johnson Teaching" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent opacity-70"></div>
+          </div>
+          <div class="p-6 -mt-16 relative">
+            <img src="/api/placeholder/120/120" alt="Sarah Johnson" class="w-24 h-24 rounded-full border-4 border-zinc-900 mx-auto mb-4">
+            <div class="text-center mb-4">
+              <h3 class="text-xl font-semibold">Sarah Johnson</h3>
+              <p class="text-teal-400">Senior Web Developer</p>
+              <div class="flex items-center justify-center mt-2">
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <span class="text-sm text-zinc-400 ml-2">5.0 (42 reviews)</span>
+              </div>
+            </div>
+            <p class="text-zinc-400 text-center mb-4">10+ years of experience in web development. Specialized in React, Node.js, and modern JavaScript frameworks.</p>
+            <div class="flex flex-wrap justify-center gap-2 mb-6">
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">React</span>
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Node.js</span>
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">JavaScript</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-zinc-400">6 Courses</span>
+              <a href="#" class="text-teal-400 hover:text-teal-300 flex items-center text-sm">
+                View Profile
+                <i data-feather="chevron-right" class="w-4 h-4 ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Instructor 2 -->
+        <div class="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-zinc-700 transition-colors">
+          <div class="aspect-video relative">
+            <img src="/api/placeholder/400/250" alt="Michael Chen Teaching" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent opacity-70"></div>
+          </div>
+          <div class="p-6 -mt-16 relative">
+            <img src="/api/placeholder/120/120" alt="Michael Chen" class="w-24 h-24 rounded-full border-4 border-zinc-900 mx-auto mb-4">
+            <div class="text-center mb-4">
+              <h3 class="text-xl font-semibold">Michael Chen</h3>
+              <p class="text-indigo-400">Product Designer</p>
+              <div class="flex items-center justify-center mt-2">
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500 opacity-30"></i>
+                <span class="text-sm text-zinc-400 ml-2">4.8 (36 reviews)</span>
+              </div>
+            </div>
+            <p class="text-zinc-400 text-center mb-4">UI/UX designer with experience at top tech companies. Expertise in user research, interaction design, and design systems.</p>
+            <div class="flex flex-wrap justify-center gap-2 mb-6">
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">UI/UX</span>
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Figma</span>
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Design Systems</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-zinc-400">4 Courses</span>
+              <a href="#" class="text-teal-400 hover:text-teal-300 flex items-center text-sm">
+                View Profile
+                <i data-feather="chevron-right" class="w-4 h-4 ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Instructor 3 -->
+        <div class="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-zinc-700 transition-colors">
+          <div class="aspect-video relative">
+            <img src="/api/placeholder/400/250" alt="Alex Thompson Teaching" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent opacity-70"></div>
+          </div>
+          <div class="p-6 -mt-16 relative">
+            <img src="/api/placeholder/120/120" alt="Alex Thompson" class="w-24 h-24 rounded-full border-4 border-zinc-900 mx-auto mb-4">
+            <div class="text-center mb-4">
+              <h3 class="text-xl font-semibold">Alex Thompson</h3>
+              <p class="text-purple-400">Data Scientist</p>
+              <div class="flex items-center justify-center mt-2">
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500 opacity-30"></i>
+                <span class="text-sm text-zinc-400 ml-2">4.9 (28 reviews)</span>
+              </div>
+            </div>
+            <p class="text-zinc-400 text-center mb-4">Data scientist with background in machine learning and statistical analysis. Formerly at Google and Tesla.</p>
+            <div class="flex flex-wrap justify-center gap-2 mb-6">
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Python</span>
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Machine Learning</span>
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Data Analysis</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-zinc-400">5 Courses</span>
+              <a href="#" class="text-teal-400 hover:text-teal-300 flex items-center text-sm">
+                View Profile
+                <i data-feather="chevron-right" class="w-4 h-4 ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Instructor 4 -->
+        <div class="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-zinc-700 transition-colors">
+          <div class="aspect-video relative">
+            <img src="/api/placeholder/400/250" alt="Emma Davis Teaching" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent opacity-70"></div>
+          </div>
+          <div class="p-6 -mt-16 relative">
+            <img src="/api/placeholder/120/120" alt="Emma Davis" class="w-24 h-24 rounded-full border-4 border-zinc-900 mx-auto mb-4">
+            <div class="text-center mb-4">
+              <h3 class="text-xl font-semibold">Emma Davis</h3>
+              <p class="text-yellow-400">Marketing Strategist</p>
+              <div class="flex items-center justify-center mt-2">
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <span class="text-sm text-zinc-400 ml-2">5.0 (31 reviews)</span>
+              </div>
+            </div>
+            <p class="text-zinc-400 text-center mb-4">Digital marketing expert with experience across multiple industries. Specialized in SEO, content marketing, and social media strategy.</p>
+            <div class="flex flex-wrap justify-center gap-2 mb-6">
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">SEO</span>
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Content Marketing</span>
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Social Media</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-zinc-400">3 Courses</span>
+              <a href="#" class="text-teal-400 hover:text-teal-300 flex items-center text-sm">
+                View Profile
+                <i data-feather="chevron-right" class="w-4 h-4 ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Instructor 5 -->
+        <div class="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-zinc-700 transition-colors">
+          <div class="aspect-video relative">
+            <img src="/api/placeholder/400/250" alt="David Wilson Teaching" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent opacity-70"></div>
+          </div>
+          <div class="p-6 -mt-16 relative">
+            <img src="/api/placeholder/120/120" alt="David Wilson" class="w-24 h-24 rounded-full border-4 border-zinc-900 mx-auto mb-4">
+            <div class="text-center mb-4">
+              <h3 class="text-xl font-semibold">David Wilson</h3>
+              <p class="text-blue-400">Cloud Architect</p>
+              <div class="flex items-center justify-center mt-2">
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500 opacity-30"></i>
+                <span class="text-sm text-zinc-400 ml-2">4.7 (25 reviews)</span>
+              </div>
+            </div>
+            <p class="text-zinc-400 text-center mb-4">Cloud and DevOps expert with experience in AWS, Azure, and GCP. Specialized in scalable architecture and infrastructure as code.</p>
+            <div class="flex flex-wrap justify-center gap-2 mb-6">
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">AWS</span>
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">DevOps</span>
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Terraform</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-zinc-400">4 Courses</span>
+              <a href="#" class="text-teal-400 hover:text-teal-300 flex items-center text-sm">
+                View Profile
+                <i data-feather="chevron-right" class="w-4 h-4 ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Instructor 6 -->
+        <div class="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-zinc-700 transition-colors">
+          <div class="aspect-video relative">
+            <img src="/api/placeholder/400/250" alt="Olivia Martinez Teaching" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent opacity-70"></div>
+          </div>
+          <div class="p-6 -mt-16 relative">
+            <img src="/api/placeholder/120/120" alt="Olivia Martinez" class="w-24 h-24 rounded-full border-4 border-zinc-900 mx-auto mb-4">
+            <div class="text-center mb-4">
+              <h3 class="text-xl font-semibold">Olivia Martinez</h3>
+              <p class="text-green-400">Product Manager</p>
+              <div class="flex items-center justify-center mt-2">
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <i data-feather="star" class="w-4 h-4 text-yellow-500"></i>
+                <span class="text-sm text-zinc-400 ml-2">4.9 (33 reviews)</span>
+              </div>
+            </div>
+            <p class="text-zinc-400 text-center mb-4">Product manager with experience at startups and Fortune 500 companies. Expert in product strategy, user-centered design, and agile methodologies.</p>
+            <div class="flex flex-wrap justify-center gap-2 mb-6">
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Product Strategy</span>
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Agile</span>
+              <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">User Research</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-zinc-400">3 Courses</span>
+              <a href="#" class="text-teal-400 hover:text-teal-300 flex items-center text-sm">
+                View Profile
+                <i data-feather="chevron-right" class="w-4 h-4 ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Load More Button -->
+      <div class="text-center mt-12">
+        <button class="px-6 py-3 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors">
+          Load More Instructors
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-zinc-900 border-t border-zinc-800 py-12">
+    <div class="container mx-auto max-w-6xl px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <span class="text-xl font-bold mb-4 block">
+            Skill<span class="text-teal-400">Rise</span>
+          </span>
+          <p class="text-zinc-400">Empowering learners worldwide with quality education.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="text-zinc-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Careers</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Press</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Resources</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Help Center</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Terms</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Privacy</a></li>
+            <li><a href="community.html" class="text-zinc-400 hover:text-white transition-colors">Community</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Get in Touch</h4>
+          <ul class="space-y-2">
+            <li><a href="contact.html" class="text-zinc-400 hover:text-white transition-colors">Contact Us</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Support</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Feedback</a></li>
+            <li><a href="#" class="text-zinc-400 hover:text-white transition-colors">Partner with Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-zinc-800 text-center text-zinc-400">
+        © 2025 SkillRise. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/pages/mentors.js"></script>
+  <script>
+    // Initialize feather icons
+    feather.replace();
+  </script>
+</body>
+</html>

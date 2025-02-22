@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard - SkillRise</title>
+  <link rel="stylesheet" href="../css/tailwind.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Feather Icons (alternative to Lucide) -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="min-h-screen bg-zinc-950 text-white">
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-zinc-900/80 backdrop-blur-lg border-b border-zinc-800/50">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center space-x-12">
+          <a href="index.html" class="text-xl font-bold">
+            Skill<span class="text-teal-400">Rise</span>
+          </a>
+          <div class="hidden md:flex space-x-6">
+            <a href="dashboard.html" class="nav-link-active">Dashboard</a>
+            <a href="courses.html" class="nav-link">Courses</a>
+            <a href="community.html" class="nav-link">Community</a>
+          </div>
+        </div>
+        <div class="flex items-center space-x-6">
+          <button class="relative text-zinc-400 hover:text-white transition-colors" id="notifications-btn">
+            <i data-feather="bell" class="w-5 h-5"></i>
+            <span class="absolute -top-1 -right-1 w-2 h-2 bg-teal-500 rounded-full"></span>
+          </button>
+          <button class="text-zinc-400 hover:text-white transition-colors" id="settings-btn">
+            <i data-feather="settings" class="w-5 h-5"></i>
+          </button>
+          <div class="flex items-center space-x-3 px-3 py-1.5 rounded-lg bg-zinc-800/50 backdrop-blur-sm">
+            <i data-feather="user" class="w-8 h-8 text-teal-400"></i>
+            <span class="text-sm font-medium">John Doe</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="pt-24 pb-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+      <!-- Welcome Section -->
+      <div class="mb-12">
+        <h1 class="text-4xl font-bold mb-4">Welcome back, John!</h1>
+        <p class="text-zinc-400 text-lg">Continue your learning journey</p>
+      </div>
+
+      <!-- Course Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12" id="ongoing-courses">
+        <!-- Courses will be populated by JavaScript -->
+      </div>
+
+      <!-- Additional Sections -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Upcoming Classes -->
+        <div class="bg-zinc-900/50 backdrop-blur-sm rounded-xl border border-zinc-800/50 p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-xl font-semibold">Upcoming Classes</h3>
+            <button class="text-teal-400 hover:text-teal-300 text-sm font-medium flex items-center">
+              View Schedule
+              <i data-feather="chevron-right" class="w-4 h-4 ml-1"></i>
+            </button>
+          </div>
+          <div class="space-y-4" id="upcoming-classes">
+            <!-- Classes will be populated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Achievements & Certificates -->
+        <div class="bg-zinc-900/50 backdrop-blur-sm rounded-xl border border-zinc-800/50 p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-xl font-semibold">Achievements & Certificates</h3>
+            <button class="text-teal-400 hover:text-teal-300 text-sm font-medium flex items-center">
+              View All
+              <i data-feather="chevron-right" class="w-4 h-4 ml-1"></i>
+            </button>
+          </div>
+          <div class="space-y-4" id="achievements">
+            <!-- Achievements will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Notifications Panel (Hidden by default) -->
+  <div class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden" id="notifications-panel">
+    <div class="absolute right-0 top-0 h-full w-full max-w-md bg-zinc-900 p-6 shadow-xl">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-xl font-semibold">Notifications</h3>
+        <button class="text-zinc-400 hover:text-white" id="close-notifications">
+          <i data-feather="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div class="space-y-4" id="notifications-list">
+        <!-- Notifications will be populated by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/components/courseCard.js"></script>
+  <script src="../js/pages/dashboard.js"></script>
+  <script>
+    // Initialize feather icons
+    feather.replace();
+  </script>
+</body>
+</html>
