@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
       "dev": "live-server src",
-      "build:css": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/styles.css --watch",
+      "build:css": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/styles.css",
+      "watch:css": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/styles.css --watch",
       "build": "npm run build:css && cp -r src/* public/"
     },
     "keywords": [
