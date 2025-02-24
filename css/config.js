@@ -1,9 +1,4 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-    content: [
-      "./src/**/*.{html,js}",
-      "./public/**/*.html",
-    ],
+tailwind.config = {
     theme: {
       extend: {
         colors: {
@@ -25,15 +20,7 @@ module.exports = {
             400: '#7f9cf5',
             500: '#667eea',
           }
-        },
-        fontFamily: {
-          sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
-        },
-        borderRadius: {
-          'xl': '0.75rem',
-          '2xl': '1rem',
-        },
-      },
-    },
-    plugins: [],
+        }
+      }
+    }
   }
